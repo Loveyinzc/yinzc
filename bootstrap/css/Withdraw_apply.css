@@ -1,0 +1,12 @@
+.hiphop {
+  font: 18px "微软雅黑";
+}
+.hiphop > div {
+  margin-bottom: 30px;
+}
+.hiphop > div > span {
+  color: #00a8ff;
+}
+.group_list {
+  border-radius: 10px;
+}

@@ -1,0 +1,15 @@
+.req_list {
+  border: 1px solid #cdcdcd;
+  margin-top: 5px;
+  border-radius: 5px 5px 0 0;
+  padding: 0;
+}
+.req_list > div {
+  width: 100%;
+  font-size: 16px;
+  line-height: 40px;
+  background-color: #F5F5F5;
+}
+.req_list > div > span {
+  margin-left: 20px;
+}

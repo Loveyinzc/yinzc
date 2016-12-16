@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>蓝源Eloan-P2P平台</title>
+    <!--通用资源引入-->
+    <link rel="stylesheet" href="js/bootstrap-3.3.2-dist/css/bootstrap.css" type="text/css"/>
+    <!-- <link rel="stylesheet" href="css/core.css" type="text/css"/>-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">-->
+    <link rel="stylesheet" href="css/person.css" type="text/css">
+    <link rel="stylesheet" href="css/realAuth.css">
+    <link rel="stylesheet" href="css/bid_request_list.css">
+    <script type="text/javascript" src="js/jquery/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.bootstrap.min.js"></script>
+	<script src="js/jquery.twbsPagination.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<header class="navbar-inverse " role="navigation">
+    <div class="container ">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topMenus">
+                <!--aria-expanded="false" aria-controls="navbar">-->
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+
+                <span class="glyphicon glyphicon-phone-alt"></span>
+                <i>0825-6712432</i>
+            </div>
+
+        </div>
+        <div class="collapse navbar-collapse" id="topMenus">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="" >首页</a></li>
+                <li><a href="" >小强</a></li>
+                <li><a href="" >赶紧充值</a></li>
+                <li><a href="req.html" >注册</a></li>
+                <li><a href="" >登录</a></li>
+                <li><a href="" >联系我们</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+<menu class="navbar navbar-default " id="topmenu">
+    <img src="img/logo.png" class="nav navbar-header"/>
+    <ul class="nav  navbar-nav nav-pills" id="menus">
+        <li role="presentation"><a href="" >首页</a></li>
+        <li role="presentation"><a href="" >我要投资</a></li>
+        <li role="presentation"><a href="" >我要贷款</a></li>
+        <li role="presentation" class="active"><a href="">个人中心</a></li>
+        <li role="presentation"><a href="" >新手指引</a></li>
+        <li role="presentation"><a href="" >关于我们</a></li>
+
+    </ul>
+</menu>
+<div class="container" >
+    <div class="row">
+        <div class="col-md-3" id="projects">
+            <div class="list-group">
+                <a href="" class="list-group-item list-group-item-info">投资项目</a>
+            </div>
+            <div class="list-group">
+
+                <a href="" class="list-group-item list-group-item-info">借款项目</a>
+                <a href="bid_request_list.html" class="list-group-item pdd ">借款项目</a>
+                <a href="" class="list-group-item pdd">还款明细</a>
+
+            </div>
+            <div class="list-group">
+
+                <a href="" class="list-group-item list-group-item-info">我的账户</a>
+                <a href="person.html" class="list-group-item pdd">账户信息</a>
+                <a href="realAuth.html" class="list-group-item pdd active">实名认证</a>
+                <a href="" class="list-group-item pdd">银行卡管理</a>
+                <a href="" class="list-group-item pdd">登记记录</a>
+            </div>
+            <div class="list-group">
+
+                <a href="" class="list-group-item list-group-item-info">资产详情</a>
+                <a href="" class="list-group-item pdd">账户流水</a>
+                <a href="" class="list-group-item pdd">充值明细</a>
+                <a href="" class="list-group-item pdd">提现记录</a>
+                <a href="" class="list-group-item pdd">收款明细</a>
+            </div>
+            <div class="list-group">
+
+                <a href="userInfo.html" class="list-group-item list-group-item-info">个人资料</a>
+
+            </div>
+        </div>
+        <div class="col-md-9 real_list">
+            <div id="topspan">
+                <span>实名认证</span>
+                <button type="button" class="btn btn-danger" id="add" data-toggle="modal" data-target="#mymod">新增</button>
+            </div>
+            <!--<section id="write_infors">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9" id="input_more">
+                        <div>为保护您账户安全，实名认证成功之后不能修改信息，请认真填写！</div>
+                        <div>
+                            用户名 <input type="text" class="rights move_left">
+                        </div>
+                        <div>
+                            姓名<input type="text" class="rights move_lefts">
+                        </div>
+                        <div>
+                            性别
+                            <select name="" id="select_one">
+
+                                <option value="1">男</option>
+                                <option value="2">女</option>
+                            </select>
+
+
+                        </div><!-- /.col-lg-6 -->
+
+                        <!--<div>
+                            证件类型
+                            <select name="" id="select_two">
+                                <option value="0">身份证</option>
+                                <option value="1">军官证</option>
+                                <option value="2">驾驶证</option>
+                            </select>
+                        </div>
+                        <div>
+                            证件号码<input type="text" class="rights">
+                        </div>
+                        <div>
+                            出生日期<input type="text" class="rights">
+                        </div>
+                        <div>
+                            证件地址<input type="text" class="rights">
+                        </div>
+                        <div class="form-group" id="file_input">
+                            <div>身份证照片</div>
+
+                            <input type="file" class="file_1" >
+                            <input type="file" class="file_1">
+                            <a href="#" class="help-block">查看样板</a>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">认证提交</button>
+                    </div>
+                </div>
+
+            </section>-->
+			<table class="table" id="yes">
+				<thead>
+					<tr>
+					<th>id</th>
+					<th>姓名</th>
+					<th>身份证</th>
+					<th>电话</th>
+					<th>城市</th>
+					<th>状态</th>
+					<th>操作</th>
+				</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			<!--显示分页的信息-->
+			<ul id="pagination-demo" class="pagination-sm"></ul>
+        </div>
+    </div>
+</div>
+</div>
+<!--弹出框-->
+<div class="modal" id="mymod">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="infor">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-7 control-label">
+									<h4>个人信息</h4>
+									</label>
+								
+								</div>
+							
+							</form>
+						</div>
+						<div class="modal-header">
+							<form class="form-horizontal form1">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">
+									id
+								</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" name="id"/>
+								</div>
+								</div>
+							</form>
+							<form class="form-horizontal form1">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">
+									姓名
+								</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" name="username"/>
+								</div>
+								</div>
+							</form>
+							<form class="form-horizontal form1">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">
+									身份证
+									</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" name="idCard"/>
+									</div>
+								</div>
+							</form>
+							<form class="form-horizontal form1">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">
+									电话
+									</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" name="phone"/>
+									</div>
+								</div>
+							</form>
+							<form class="form-horizontal form1">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">
+									城市
+									</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" name="city"/>
+									</div>
+								</div>
+							</form>
+							<form class="form-horizontal form1">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">
+									状态
+									</label>
+									<div class="col-sm-10">
+										<select name="status" >
+											<option>待审核</option>
+											<option>审核失败</option>
+											<option>审核成功</option>
+										</select>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-primary" id="save">保存</button>
+						<button type="button" class="btn btn-success" id="close">取消</button>
+					</div>
+					</div>
+				</div>
+			</div>
+<div class="row el-footer">
+    <div class="container page1">
+        <div class="col-sm-8">
+            <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+            <p>版权所有：&emsp;2006-2015成都源代码教育咨询有限公司</p>
+            <p>地&emsp;&emsp;址：&emsp;成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+            <p>电&emsp;&emsp;话：&emsp;028-86261949&nbsp; / 400-808-6840&emsp;
+                邮箱：&emsp;yuandaima@itsource.cn</p>
+            <p>
+                <a href="http://www.miitbeian.gov.cn">蜀ICP备14030149号-1</a>&emsp;&emsp;<a
+                    href="http://www.gaj.chengdu.gov.cn">蜀公网安备510114990541</a>
+            </p>
+            <div style="display: inline-block; overflow: hidden; float: left;"></div>
+        </div>
+        <div class="col-sm-2">
+            <div>
+                <p
+                        style="padding-bottom: 15px; font-size: 14px; padding-left: 10px;">官方微博：</p>
+                <a href="http://t.qq.com/it-source" target="_blank"> <img
+                        src="img/wxsm.png" alt="Responsive image">
+                </a> <a href="http://weibo.com/cditcast" target="_blank"> <img
+                    src="img/xlwb.png" alt="Responsive image">
+            </a>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div>
+                <p
+                        style="padding-bottom: 15px; font-size: 14px; padding-left: 10px;">官方微信：</p>
+                <img src="img/wx.jpg" alt="Responsive image"
+                     class="img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			type:"get",
+			url:"http://localhost:3000/mockapi",
+			async:false,
+			dataType:"jsonp",
+			success:function(data){
+				showPage(data)
+			},
+			
+			
+			error:function(err){
+				console.log(err)
+			}
+		});
+		//封装函数
+		function showTable(data){
+			
+			var txt="";
+				for(var i=0;i<data.length;i++){
+					txt+="<tr>";
+					txt+="<td>"+data[i].id+"</td>"
+					txt+="<td>"+data[i].name+"</td>"
+					txt+="<td>"+data[i].idCard+"</td>"
+					txt+="<td>"+data[i].phone+"</td>"
+					txt+="<td>"+data[i].city+"</td>"
+					txt+="<td>"+data[i].status+"</td>"
+					txt+='<td><button type="button" class="btn btn-primary editer" data-cmd="edit">编辑</button>'
+					txt+='<button type="button" class="btn btn-danger" data-cmd="delete">删除</button></td>'
+					txt+="</tr>"
+				}
+				$('#yes tbody').html(txt);
+		}
+		$("#save").click(function(){
+			var params=$(".form1").serialize();
+			console.log(params)
+			$.get("/mockjsapp",params,function(data){
+				console.log(data)
+			})
+			
+			$(".form1").find("input").val("");
+			$("#mymod").modal("hide");
+					
+		})
+		$("#close").click(function(){
+			$("#mymod").modal("hide");
+			
+		})
+		//新增用户
+		$("#add").click(function(){
+			$("#mymod").find("input").val("");
+			var params=$(".form1").serialize();
+			$.get("/mocktest",params,function(data){
+				conso.log(params)
+			})
+		})
+//		$("#save").click(function(){
+//			console.log(this)
+//		})
+		//事件的委托
+		$("#yes tbody").on("click","td button",function(){
+			var cmd=$(this).attr("data-cmd")
+//			console.log(cmd)
+			if(cmd==="edit"){
+				$("#mymod").modal("show");
+				$("#mymod h4").html("编辑用户");
+				var $tr=$(this).closest("tr")
+				var $id = $tr.find("td").eq(0).html();
+	   	    	var $name = $tr.find("td").eq(1).html();
+	   	    	var $cid = $tr.find("td").eq(2).html();
+	   	    	var $phone = $tr.find("td").eq(3).html();
+	   	    	var $city = $tr.find("td").eq(4).html();
+	   	    	var $status = $tr.find("td").eq(5).html()
+	   	    	$(".form1").find("input[name=id]").val($id)
+	   	    	$(".form1").find("input[name=username]").val($name)
+	   	    	$(".form1").find("input[name=idCard]").val($cid)
+	   	    	$(".form1").find("input[name=phone]").val($phone)
+	   	    	$(".form1").find("input[name=city]").val($city)
+	   	    	$(".form1").find("input[name=status]").val($status)
+
+				$("#save").click(function(){
+					var a=$(".form1").find("input").val()
+//					console.log(a)
+				})
+
+				
+			}
+			if(cmd==="delete"){
+				$("#")
+			}
+		})
+		function showPage(data){
+			$('#pagination-demo').twbsPagination({
+				first:"首页",
+				prev:"上一页",
+				next:"下一页",
+				last:"尾页",
+	        totalPages: 25,
+	        visiblePages: 5,
+	        onPageClick: function (event, page) {
+	            showTable(data)
+	            var pageSize=5;
+	            var start=(page-1)*pageSize;
+	            var end=start+pageSize;
+	            var pageData = data.itemGroup.slice(start,end);
+   				$("#yes").find("tbody").empty();
+			    //显示表格
+	        	showTable(pageData);
+	        	//page  当前点中是哪个页面
+	            $('#page-content').text('Page ' + page);
+			}
+});	
+		}
+	})
+</script>
+
+
+</body>
+</html>

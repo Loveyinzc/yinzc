@@ -1,0 +1,87 @@
+.left_move > div:nth-child(1) {
+  background-color: #F5F5F5;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+}
+.row > div:nth-of-type(1) {
+  margin-top: 10px;
+}
+#img_icon > img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0px auto;
+}
+#img_icon > div {
+  width: 20px;
+  margin: 0px auto 30px;
+}
+#icon_creait {
+  margin-top: 25px;
+  margin-left: 5px;
+}
+h3 {
+  color: #00a8ff;
+  font-family: "微软雅黑";
+}
+.list_li {
+  font-size: 16px;
+  list-style: none;
+  color: #c0c0c0;
+  padding: 0;
+}
+.list_li > li {
+  margin-top: 10px;
+}
+.list_li > li span {
+  color: #00a8ff;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.new_list {
+  margin-top: 10px;
+}
+.new_list > div {
+  font-size: 18px;
+  color: #c0c0c0;
+}
+.new_list span {
+  margin-left: 60px;
+  color: #00a8ff;
+}
+.table {
+  color: #c0c0c0;
+  font-size: 16px;
+  font-family: 微软雅黑;
+}
+.table > tbody > tr > th {
+  border-top: 0;
+}
+.table > tbody > tr > td {
+  border-top: 0;
+}
+.table span {
+  color: #00a8ff;
+  margin-left: 10px   ;
+}
+.panel {
+  margin: 20px 0;
+}
+.tab_miss {
+  color: #000;
+  font-weight: bold;
+}
+.tab_miss > tbody > tr > td {
+  border-top: 2px solid #cdcdcd;
+}
+.tab_missyou {
+  color: #000;
+}
+.tab_missyou > tbody > tr > th {
+  border-bottom: 2px solid #cdcdcd;
+  font-weight: bold;
+}
+.tab_missyou > tbody > tr > td {
+  border-top: 1px solid #cdcdcd;
+}

@@ -1,0 +1,64 @@
+.row {
+  margin-top: 30px;
+}
+.panel {
+  border-radius: 0;
+}
+#box1 .credit,
+#box2 .credit,
+#box3 .credit {
+  background-color: #40d47e;
+  font-size: 25px;
+  color: #fff;
+  font-family: "微软雅黑";
+  line-height: 50px;
+  padding-left: 20px;
+  height: 50px;
+}
+#box2 .credit {
+  background-color: #ec7e20;
+}
+#box3 .credit {
+  background-color: #2ca2ee;
+}
+#box1 .condition > div,
+#box3 .condition > div,
+#box2 .condition > div {
+  margin-top: 5px;
+}
+#box1 .condition > div:nth-child(1),
+#box3 .condition > div:nth-child(1),
+#box2 .condition > div:nth-child(1) {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+#some_li > li {
+  padding-left: 25px;
+  list-style: none;
+  background: url("../img/sequare.png") no-repeat;
+}
+#some_li2 > li {
+  padding-left: 25px;
+  list-style: none;
+  background: url("../img/sequare.png") no-repeat;
+}
+#some_li3 > li {
+  padding-left: 25px;
+  list-style: none;
+  background: url("../img/sequare.png") no-repeat;
+}
+.btn {
+  border-radius: 20px;
+  background: #00a8ff;
+  color: #fff;
+  display: block;
+  margin: 0px auto;
+  width: 80px;
+  height: 30px;
+  outline: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.back_color {
+  background-color: #f9f9f9;
+}

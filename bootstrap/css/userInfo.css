@@ -1,0 +1,30 @@
+#input_more > div:nth-child(1) {
+  margin-top: 0;
+  color: #000;
+}
+#input_more > div:nth-child(1) input {
+  width: 0;
+  border: 0;
+}
+#input_more > div:nth-child(2) input {
+  width: 0;
+  border: 0;
+}
+#input_more > div:nth-child(3) input {
+  width: 0;
+  border: 0;
+}
+#select_one {
+  margin-left: 25px;
+}
+#input_more > div:last-child input {
+  width: 400px;
+}
+#input_more > div {
+  margin: 15px 0;
+  height: 35px;
+  font-weight: bold;
+}
+#input_more > button {
+  margin-left: 100px;
+}

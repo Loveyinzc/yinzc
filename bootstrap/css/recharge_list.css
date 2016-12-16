@@ -1,0 +1,8 @@
+.req_list {
+  position: relative;
+}
+.req_list button {
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
